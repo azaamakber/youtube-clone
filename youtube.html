@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Clone</title>
+</head>
+<body style="margin-top: 0;
+background-color:rgb(15, 15, 15) ;">
+    <div style="display: flex;
+    font-family: arial;
+    height: 80px;
+    top: 0;
+    left: 0;
+    right: 0;
+    flex-direction: row;
+    background-color:rgb(15, 15, 15) ;
+    justify-content: space-between;
+    position: fixed;">
+        <div style="display: flex;
+        flex-direction: row;
+        width: 250px;">
+        <div style="
+        width: 50px;">
+        <button style="background-color: rgb(15, 15, 15);
+        border: none;
+        ">  <img style="
+        width: 18px;
+        margin-top: 19px;
+        margin-left: 19px;  
+        " src="menu-4-256.png" ></button>
+          
+        </div>
+        <div style="
+        width: 110px;"><img style="
+        margin-top: 14px;
+        margin-left: 11px;
+    width: 100px;" src="YouTube-White-Full-Color-Logo.wine.png" ></div>
+        
+    </div>
+        <div style="display: flex;
+        flex: 1;
+        top: 0;
+        max-width: 650px;   
+        ">
+        
+            <input style="flex: 1;
+            background-color: rgb(15, 15, 15);
+            border: solid;
+            border-width: 1px;
+            height: 35px;
+            max-width: 400px;
+            margin-top:8px ;
+            border-radius: 22px;
+            font-size: 17px;
+            border-color: rgb(140, 140, 140);
+            " type="text" placeholder=" Search">
+        <button style="display: flex;
+        align-items: center;
+        height: 34px;
+        justify-content: center;
+        border: solid;
+        background-color: rgb(15, 15, 15);
+        margin-top: 10px;
+        border-color: rgb(144, 143, 143);
+        border-width: 1px;
+        margin-left: -65px;
+        border-top: none;
+        border-bottom: none;
+        border-right: none;
+        padding-left: 16px;
+        padding-top: 0;
+        padding-bottom: 0;
+        cursor: pointer;
+        padding-right: 17px;">
+            <img style=" width: 18px;" src="icons8-search-50.png" >
+        </button>
+           
+        
+        
+            <button style="display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(34, 34, 34);
+            border: none;
+            border-width: 1px;
+            border-radius: 30px;
+            width: 37px;
+            height: 37px;
+            margin-top: 8px;
+            margin-left: 30px;
+            cursor: pointer;
+            ">
+                <img  src="icons8-mic-30.png" >
+            </button>
+        
+        </div>
+        
+        <div style="display: flex;
+        flex-direction: row;
+        width: 180px;">
+        <button style="display: flex;
+        justify-content: center;
+        width: 46px;
+        height: 24px;
+        background-color: rgb(15, 15, 15);
+        border: none;
+        margin-top:15px;
+        cursor: pointer;">
+            <img src="create.png" >
+        </button>
+        <button style="display: flex;
+        justify-content: center;
+        width: 46px;
+        height: 24px;
+        background-color: rgb(15, 15, 15);
+        border: none;
+        margin-top: 17px;
+        cursor: pointer;">
+            <img src="icons8-notification-24.png">
+        </button>
+        <div
+         style="margin-right: 6px;">
+            <img style=" width: 30px;
+        margin-left: 15px;
+        
+        height: 33px;
+        margin-top: 16px;
+        border-radius: 20px;" src="third.png">
+
+        </div>
+        
+        </div>
+    </div>
+    <div style="display: flex;
+    flex-direction: row;">
+        <div style="width: 100px;
+        height: 1000px;
+        position: fixed;">
+            <button style="margin-top:90px ;
+            margin-left: 30px;
+            width: 40px;
+            background-color: rgb(15, 15, 15);
+            border: none;
+            cursor: pointer;">
+                  <img style="width: 24px;
+                  height: 27px;" src="icons8-home-48.png">
+                  <div style="margin-left: -3px ;
+                  margin-top: 3px;
+                  color: white;
+                  font-size: 11px;">Home</div>
+            </button>
+            <button style="margin-top: 18px;
+            margin-left: 26px;
+            background-color: rgb(15, 15, 15);
+            border: none;
+            cursor: pointer;">
+                <img src="icons8-youtube-shorts-24.png" >
+                <div style="color: white;
+                margin-top: 3px;
+                
+                font-size: 11px;">Shorts</div>
+            </button>
+            <button style="width: 80px;
+            background-color: rgb(15, 15, 15);
+            margin-top: 18px;
+            border: none;
+            margin-left: 6px;
+            cursor: pointer;">
+                <img style="width: 26px;" src="icons8-video-playlist-50.png">
+                <div style="color: white;
+                margin-left: -4px;
+                margin-top: 3px;
+                font-size: 11px;">Subscriptions</div>
+            </button>
+            <button style="width: 45px;
+            margin-top: 18px;
+            margin-left: 22px;
+            border: none;
+            background-color: rgb(15, 15, 15);
+            cursor: pointer;">
+                <img src="icons8-playlist-25.png">
+                <div style="color: white;
+                margin-left: -3px;
+                margin-top: 3px;
+                font-size: 11px;">Library</div>
+            </button>
+        </div>
+        
+
+         <div>
+            <div style="display: grid;
+
+            left: 210;
+            
+            margin-left: 110px;
+            margin-top: 100px; 
+            font-family: arial;
+            grid-template-columns: 1fr 1fr 1fr;">
+             <div style="display:grid ;
+             flex: 1;
+             max-width: 420px;"> <div style="
+                display: flex;
+                
+                flex-direction: column;
+                width: 1fr;
+                height: 310px;">
+                     <div style="
+                     display: flex;
+                     width: 1fr;
+                     height: 220px;
+                     align-items: center;
+                     justify-content: center;">
+                        <img  style="
+                        width: 1fr;
+                        height: 220px;" src="video 1.jpg">
+                    </div>
+                    <div style="display: flex;
+                    flex-direction: row;">
+                        <div style="display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    width: 55px;
+                    height: 60px;">
+                        <img style="width: 43px;
+                        height: 43px;
+                        border-radius: 20px;" src="channels4_profile.jpg" >
+                    </div>
+                    <div style="display: flex;
+                    flex-direction: column;
+                    margin-left: 5px;">
+                         <div style="display: flex;
+                    flex-direction: column;
+                    width: 1fr;
+                    height: 1fr;
+                    font-weight: bold;
+                    font-size: 14px;
+                    margin-top: 7px;
+                    color: white;">Afwah _ Amrinder Gill | Slowed+Reverb | Punjabi Song #amrindergill</div>
+                         <div style="width:1fr;
+                         height: 1fr;
+                         font-weight: 500;
+                         font-size: 14px;
+                         margin-top: 8px;
+                         margin-bottom: 6px;
+                         color: rgb(144, 143, 143);" >Slowed Nation</div>
+                         <div style="width: 1fr;
+                         height: 1fr;
+                         color: rgb(144, 143, 143);
+                         font-size: 15px;">429K views . 5 months ago</div>
+                    </div>
+                   
+                </div>
+                
+                    </div>
+             
+                </div>
+                <div style="display:grid ;
+             flex: 1;
+             max-width: 420px;"> <div style="
+                display: flex;
+                
+                flex-direction: column;
+                width: 1fr;
+                height: 310px;">
+                     <div style="
+                     display: flex;
+                     width: 1fr;
+                     height: 220px;
+                     align-items: center;
+                     justify-content: center;">
+                        <img  style="
+                        width: 1fr;
+                        height: 220px;" src="hq720.webp">
+                    </div>
+                    <div style="display: flex;
+                    flex-direction: row;">
+                        <div style="display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    width: 55px;
+                    height: 60px;">
+                        <img style="width: 43px;
+                        height: 43px;
+                        border-radius: 20px;" src="channels4_profile (1).jpg" >
+                    </div>
+                    <div style="display: flex;
+                    flex-direction: column;
+                    margin-left: 5px;">
+                         <div style="display: flex;
+                    flex-direction: column;
+                    width: 1fr;
+                    height: 1fr;
+                    font-weight: bold;
+                    font-size: 14px;
+                    margin-top: 7px;
+                    color: white;">Supreme Sidhu, Talwiinder - Baazi (Official Audio)</div>
+                         <div style="width:1fr;
+                         height: 1fr;
+                         font-weight: 500;
+                         font-size: 14px;
+                         margin-top: 8px;
+                         margin-bottom: 6px;
+                         color: rgb(144, 143, 143);" >SUPREME SIDHU</div>
+                         <div style="width: 1fr;
+                         height: 1fr;
+                         color: rgb(144, 143, 143);
+                         font-size: 15px;">2.6M views . 1 year ago</div>
+                    </div>
+                   
+                </div>
+                
+                    </div>
+             
+                </div>
+                <div style="display:grid ;
+                flex: 1;
+                max-width: 420px;"> <div style="
+                   display: flex;
+                   
+                   flex-direction: column;
+                   width: 1fr;
+                   height: 310px;">
+                        <div style="
+                        display: flex;
+                        width: 1fr;
+                        height: 220px;
+                        align-items: center;
+                        justify-content: center;">
+                           <img  style="
+                           width: 1fr;
+                           height: 220px;" src="video 3.webp">
+                       </div>
+                       <div style="display: flex;
+                       flex-direction: row;">
+                           <div style="display: flex;
+                       flex-direction: row;
+                       justify-content: center;
+                       align-items: center;
+                       width: 55px;
+                       height: 60px;">
+                           <img style="width: 43px;
+                           height: 43px;
+                           border-radius: 20px;" src="channels4_profile (3).jpg" >
+                       </div>
+                       <div style="display: flex;
+                       flex-direction: column;
+                       margin-left: 5px;">
+                            <div style="display: flex;
+                       flex-direction: column;
+                       width: 1fr;
+                       height: 1fr;
+                       font-weight: bold;
+                       font-size: 14px;
+                       margin-top: 7px;
+                       color: white;">Diljit Dosanjh - G.O.A.T. (Official Music Video)</div>
+                            <div style="width:1fr;
+                            height: 1fr;
+                            font-weight: 500;
+                            font-size: 14px;
+                            margin-top: 8px;
+                            margin-bottom: 6px;
+                            color: rgb(144, 143, 143);" >Diljit Dosanjh</div>
+                            <div style="width: 1fr;
+                            height: 1fr;
+                            color: rgb(144, 143, 143);
+                            font-size: 15px;">260M views . 3 years ago</div>
+                       </div>
+                      
+                   </div>
+                   
+                       </div>
+                
+                   </div>
+                   <div style="display:grid ;
+             flex: 1;
+             max-width: 420px;"> <div style="
+                display: flex;
+                
+                flex-direction: column;
+                width: 1fr;
+                height: 310px;">
+                     <div style="
+                     display: flex;
+                     width: 1fr;
+                     height: 220px;
+                     align-items: center;
+                     justify-content: center;">
+                        <img  style="
+                        width: 1fr;
+                        height: 220px;" src="video 4.webp">
+                    </div>
+                    <div style="display: flex;
+                    flex-direction: row;">
+                        <div style="display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    width: 55px;
+                    height: 60px;">
+                        <img style="width: 43px;
+                        height: 43px;
+                        border-radius: 20px;" src="channels4_profile (2).jpg" >
+                    </div>
+                    <div style="display: flex;
+                    flex-direction: column;
+                    margin-left: 5px;">
+                         <div style="display: flex;
+                    flex-direction: column;
+                    width: 1fr;
+                    height: 1fr;
+                    font-weight: bold;
+                    font-size: 14px;
+                    margin-top: 7px;
+                    color: white;">Lalkara Song | Diljit Dosanjh | Technical Music | Subscribe Like Share</div>
+                         <div style="width:1fr;
+                         height: 1fr;
+                         font-weight: 500;
+                         font-size: 14px;
+                         margin-top: 8px;
+                         margin-bottom: 6px;
+                         color: rgb(144, 143, 143);" >Technical Music</div>
+                         <div style="width: 1fr;
+                         height: 1fr;
+                         color: rgb(144, 143, 143);
+                         font-size: 15px;">121K views . 1 months ago</div>
+                    </div>
+                   
+                </div>
+                
+                    </div>
+             
+                </div>
+                <div style="display:grid ;
+                flex: 1;
+                max-width: 420px;"> <div style="
+                   display: flex;
+                   
+                   flex-direction: column;
+                   width: 1fr;
+                   height: 310px;">
+                        <div style="
+                        display: flex;
+                        width: 1fr;
+                        height: 220px;
+                        align-items: center;
+                        justify-content: center;">
+                           <img  style="
+                           width: 1fr;
+                           height: 220px;" src="video 5.webp">
+                       </div>
+                       <div style="display: flex;
+                       flex-direction: row;">
+                           <div style="display: flex;
+                       flex-direction: row;
+                       justify-content: center;
+                       align-items: center;
+                       width: 55px;
+                       height: 60px;">
+                           <img style="width: 43px;
+                           height: 43px;
+                           border-radius: 20px;" src="channels4_profile (4).jpg" >
+                       </div>
+                       <div style="display: flex;
+                       flex-direction: column;
+                       margin-left: 5px;">
+                            <div style="display: flex;
+                       flex-direction: column;
+                       width: 1fr;
+                       height: 1fr;
+                       font-weight: bold;
+                       font-size: 14px;
+                       margin-top: 7px;
+                       color: white;">Suroor (Slowed + Reverb) | Bilal Saeed, Neha Kakkar</div>
+                            <div style="width:1fr;
+                            height: 1fr;
+                            font-weight: 500;
+                            font-size: 14px;
+                            margin-top: 8px;
+                            margin-bottom: 6px;
+                            color: rgb(144, 143, 143);" >Reverbing Vibess</div>
+                            <div style="width: 1fr;
+                            height: 1fr;
+                            color: rgb(144, 143, 143);
+                            font-size: 15px;">1.6M views . 1 year ago</div>
+                       </div>
+                      
+                   </div>
+                   
+                       </div>
+                
+                   </div>
+                   <div style="display:grid ;
+                   flex: 1;
+                   max-width: 420px;"> <div style="
+                      display: flex;
+                      
+                      flex-direction: column;
+                      width: 1fr;
+                      height: 310px;">
+                           <div style="
+                           display: flex;
+                           width: 1fr;
+                           height: 220px;
+                           align-items: center;
+                           justify-content: center;">
+                              <img  style="
+                              width: 1fr;
+                              height: 220px;" src="video 6.webp">
+                          </div>
+                          <div style="display: flex;
+                          flex-direction: row;">
+                              <div style="display: flex;
+                          flex-direction: row;
+                          justify-content: center;
+                          align-items: center;
+                          width: 55px;
+                          height: 60px;">
+                              <img style="width: 43px;
+                              height: 43px;
+                              border-radius: 20px;" src="channels4_profile (4).jpg" >
+                          </div>
+                          <div style="display: flex;
+                          flex-direction: column;
+                          margin-left: 5px;">
+                               <div style="display: flex;
+                          flex-direction: column;
+                          width: 1fr;
+                          height: 1fr;
+                          font-weight: bold;
+                          font-size: 14px;
+                          margin-top: 7px;
+                          color: white;">12 Saal (Slowed + Reverbed) | Bilal Saeed | Reverbing Vibess</div>
+                               <div style="width:1fr;
+                               height: 1fr;
+                               font-weight: 500;
+                               font-size: 14px;
+                               margin-top: 8px;
+                               margin-bottom: 6px;
+                               color: rgb(144, 143, 143);" >Reverbing Vibess</div>
+                               <div style="width: 1fr;
+                               height: 1fr;
+                               color: rgb(144, 143, 143);
+                               font-size: 15px;">2.5M views . 2 years ago</div>
+                          </div>
+                         
+                      </div>
+                      
+                          </div>
+                   
+                      </div>
+                      <div style="display:grid ;
+                      flex: 1;
+                      max-width: 420px;"> <div style="
+                         display: flex;
+                         
+                         flex-direction: column;
+                         width: 1fr;
+                         height: 310px;">
+                              <div style="
+                              display: flex;
+                              width: 1fr;
+                              height: 220px;
+                              align-items: center;
+                              justify-content: center;">
+                                 <img  style="
+                                 width: 1fr;
+                                 height: 220px;" src="video 1.jpg">
+                             </div>
+                             <div style="display: flex;
+                             flex-direction: row;">
+                                 <div style="display: flex;
+                             flex-direction: row;
+                             justify-content: center;
+                             align-items: center;
+                             width: 55px;
+                             height: 60px;">
+                                 <img style="width: 43px;
+                                 height: 43px;
+                                 border-radius: 20px;" src="channels4_profile.jpg" >
+                             </div>
+                             <div style="display: flex;
+                             flex-direction: column;
+                             margin-left: 5px;">
+                                  <div style="display: flex;
+                             flex-direction: column;
+                             width: 1fr;
+                             height: 1fr;
+                             font-weight: bold;
+                             font-size: 14px;
+                             margin-top: 7px;
+                             color: white;">Afwah _ Amrinder Gill | Slowed+Reverb | Punjabi Song #amrindergill</div>
+                                  <div style="width:1fr;
+                                  height: 1fr;
+                                  font-weight: 500;
+                                  font-size: 14px;
+                                  margin-top: 8px;
+                                  margin-bottom: 6px;
+                                  color: rgb(144, 143, 143);" >Slowed Nation</div>
+                                  <div style="width: 1fr;
+                                  height: 1fr;
+                                  color: rgb(144, 143, 143);
+                                  font-size: 15px;">429K views . 5 months ago</div>
+                             </div>
+                            
+                         </div>
+                         
+                             </div>
+                      
+                         </div>
+                         <div style="display:grid ;
+                         flex: 1;
+                         max-width: 420px;"> <div style="
+                            display: flex;
+                            
+                            flex-direction: column;
+                            width: 1fr;
+                            height: 310px;">
+                                 <div style="
+                                 display: flex;
+                                 width: 1fr;
+                                 height: 220px;
+                                 align-items: center;
+                                 justify-content: center;">
+                                    <img  style="
+                                    width: 1fr;
+                                    height: 220px;" src="video 1.jpg">
+                                </div>
+                                <div style="display: flex;
+                                flex-direction: row;">
+                                    <div style="display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                align-items: center;
+                                width: 55px;
+                                height: 60px;">
+                                    <img style="width: 43px;
+                                    height: 43px;
+                                    border-radius: 20px;" src="channels4_profile.jpg" >
+                                </div>
+                                <div style="display: flex;
+                                flex-direction: column;
+                                margin-left: 5px;">
+                                     <div style="display: flex;
+                                flex-direction: column;
+                                width: 1fr;
+                                height: 1fr;
+                                font-weight: bold;
+                                font-size: 14px;
+                                margin-top: 7px;
+                                color: white;">Afwah _ Amrinder Gill | Slowed+Reverb | Punjabi Song #amrindergill</div>
+                                     <div style="width:1fr;
+                                     height: 1fr;
+                                     font-weight: 500;
+                                     font-size: 14px;
+                                     margin-top: 8px;
+                                     margin-bottom: 6px;
+                                     color: rgb(144, 143, 143);" >Slowed Nation</div>
+                                     <div style="width: 1fr;
+                                     height: 1fr;
+                                     color: rgb(144, 143, 143);
+                                     font-size: 15px;">429K views . 5 months ago</div>
+                                </div>
+                               
+                            </div>
+                            
+                                </div>
+                         
+                            </div>
+                            <div style="display:grid ;
+                            flex: 1;
+                            max-width: 420px;"> <div style="
+                               display: flex;
+                               
+                               flex-direction: column;
+                               width: 1fr;
+                               height: 310px;">
+                                    <div style="
+                                    display: flex;
+                                    width: 1fr;
+                                    height: 220px;
+                                    align-items: center;
+                                    justify-content: center;">
+                                       <img  style="
+                                       width: 1fr;
+                                       height: 220px;" src="video 1.jpg">
+                                   </div>
+                                   <div style="display: flex;
+                                   flex-direction: row;">
+                                       <div style="display: flex;
+                                   flex-direction: row;
+                                   justify-content: center;
+                                   align-items: center;
+                                   width: 55px;
+                                   height: 60px;">
+                                       <img style="width: 43px;
+                                       height: 43px;
+                                       border-radius: 20px;" src="channels4_profile.jpg" >
+                                   </div>
+                                   <div style="display: flex;
+                                   flex-direction: column;
+                                   margin-left: 5px;">
+                                        <div style="display: flex;
+                                   flex-direction: column;
+                                   width: 1fr;
+                                   height: 1fr;
+                                   font-weight: bold;
+                                   font-size: 14px;
+                                   margin-top: 7px;
+                                   color: white;">Afwah _ Amrinder Gill | Slowed+Reverb | Punjabi Song #amrindergill</div>
+                                        <div style="width:1fr;
+                                        height: 1fr;
+                                        font-weight: 500;
+                                        font-size: 14px;
+                                        margin-top: 8px;
+                                        margin-bottom: 6px;
+                                        color: rgb(144, 143, 143);" >Slowed Nation</div>
+                                        <div style="width: 1fr;
+                                        height: 1fr;
+                                        color: rgb(144, 143, 143);
+                                        font-size: 15px;">429K views . 5 months ago</div>
+                                   </div>
+                                  
+                               </div>
+                               
+                                   </div>
+                            
+                               </div>
+                                                                                                                                                       
+         </div>
+        
+    </div>
+
+    
+</body>
+</html>
